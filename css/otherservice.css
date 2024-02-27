@@ -1,0 +1,26 @@
+img{
+    max-width: 100%;
+}
+.as-btn{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #bf882e;
+    background-color:  #bf882e;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    padding: 15px 38px;
+    border-radius: 3px;
+}
+}
+.facility{
+    float: left;
+}
+.fac-pic{
+    float: left;
+}
+.hotel-card-tittle{
+    float: left;
+}
