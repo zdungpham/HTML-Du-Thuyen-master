@@ -1,99 +1,241 @@
-header{
-    background-image: url(/images/yacht2.jpg);
-    height: 700px;
-    background-size: cover;
-    background-position: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.35;
+    
 
-    
 }
-nav{
-    position: fixed;
-    width: 100%;
-    padding: 20px 0;
+.container{
+
 }
-nav .menu{
-    
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+
+img{
+    max-width: 100%;
 }
-.menu ul{
-    display: flex;
-    margin-left: 7px;
-    list-style: none;
+a{
+    text-decoration: none;
+    color: blueviolet;
+    transition: all 300ms;
 }
-.menu ul a {
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-.menu ul a:hover {
-    background: yellow;
-    color: black;
+p{
+    margin-bottom: 10px;
 }
 .center {
-    color: rgb(224, 123, 98);
+    background-image: url(/images/yacht1.jpg);
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    padding: 200px 20px;
+    padding: 200px 30px;
     text-align: center;
-
+    margin-bottom: 40px;
+    color: white;
+    display: inline-block;
+}
+.center b{
+    font-size: 60px;
+    font-family: display;
 }
 .center .title{
+    color: white;
+    display: inline-block;
     font-size: 55px;
-    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .center a{
-    color: rgb(224, 123, 98);
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.center h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
 }
 .center a:hover{
-    background: yellow;
+    
     color: black;
 }
 /* Main*/
 main{
-    margin: 20px 80px;
+
+}
+.booking_seclection a{
+    text-decoration: none;
+}
+.button1 a{
+    color: black;
+}
+.booking_seclection button:hover{
+    background-color: #bf882e;
+    color: white;
+    font-weight: 700;
+}
+#btndec{
+    background-color: #bf882e;
+    
+}
+#btndec1{
+    color: white;
+    font-weight: 700;
+    
 }
 .button1{
     font-size: 16px;
     padding: 10px 30px;
-    border: 1px solid red;
+    border: 0;
+    border-radius: 5px;
+}
+
+#checkoutDate{
+    border: 0;
+    background-color: rgb(250, 250, 152);;
+}
+.select_date{
+    border: 2px solid rgb(194, 110, 0);
+    background-color: rgb(250, 250, 152);
+    margin: 20px 0;
+    padding: 10px 10px;
+    
+}
+#asc{
+    font-weight: 500;
+    color: rgb(2, 2, 61);
+}
+#checkinDate, #numberOfDays{
+    height: 40px;
+    box-shadow: inset 0 1px  1px rgb(119, 95, 95);
 }
 .select_room{
-    float: left;
-    padding: 10px 20px;
+    width: 100%;
     border: 1px solid black;
+    
     
     
 }
 .cabin_picture{
     float: left;
-    width: 250px;
-    padding: 10px 0;
+    height: 210px;
+    width: 25%;
+    
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
 
 }
 .cabin{
     float: left;
-    width: 400px;
+    height: 210px;
+    width: 15%;
     padding: 10px 10px;
 }
 .cabin_item{
-    float: left;
+    height: 210px;
+    
+}
+.cabin-name{
+    color: blue;
+    font-weight: 400;
 }
 .cabin_price{
     float: left;
-    width: 300px;
+    text-align: right;
+    
+    vertical-align: middle;
+    width: 100%;
+    font-weight: 400;
     padding: 10px 10px;
 }
 .cabin_select{
     float: left;
-    width: 400px;
-    padding: 10px 10px;
+    
+    width: 100%;
+    font-weight: 400;
 }
+.cabin_select select{
+    height: 20px;
+    border: 1px solid rgb(170, 35, 35);
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px;
+    
+}
+
 .cabin_total{
     float: left;
+    
     padding: 10px 10px;
-    width: /*calc(100% - 250px - 400px - 300px - 400px);*/ 200px
+    width: 10%;
+}
+#result{
+    border: 1px solid ;
+}
+h3{
+    font-size: 10px;
+}
+h4{
+    font-size: 10px;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 5px 0;
+}
+th{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: #ddd;
+}
+td{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: antiquewhite;
+}
+.totalbabel{
+    text-align: right;
+}
+table input{
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+}
+#result{
+    border: 0;
+}
+table select{
+    background-color: antiquewhite;
+}
+.cabintotal{
+    
+    font-weight: bold;
+    color: rgb(94, 12, 12);
+}
+
+#lastprice{
+    text-align: right;
+    color: rgb(100, 94, 94);
+}
+#totalprice{
+    color: rgb(94, 12, 12);
+}
+#booking-button {
+    margin-bottom: 20px;
+    text-align: right;
+    background-color: #0074d9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#booking-button a{
+    text-decoration: none;
+    color: white;
 }

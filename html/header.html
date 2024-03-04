@@ -3,12 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Header</title>
     <link rel="stylesheet" href="css/header.css"/>
 </head>
 <body>
     <header>
-        
+        <nav>
+            <div id="head-1-blank"></divav>
+            <div id="head-1">
+                <div id="head-top">
+                    <a id="head-top-home" href="index.php">
+                        <h1>Lux<span style="color: red">u</span>ry Cruises</h1>
+                        <h2>Ha Long Bay</h2>
+                    </a>
+                    <h3 id="reserve"><a href="Reservation.php">Reservation</a></h3>
+                </div>
+                <div id="head-border"></div>
+                <div id="head-bottom">
+                    <table>
+                        <tr>
+                            <td><a href="index.php">Home</a></td>
+                            <td><a href="otherservice.php">Service</a></td>
+                            <td><a href="information.php">About us</a></td>
+                            <td><a href="#">Contact</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div id="head-2-blank"></div>
+            <div id="head-2">
+                <div id="hidden-bar">
+                    <button class="hidden-padding" id="head-2-close" type="button" onclick="closeHeader()">&times;</button>
+                    <a class="hidden-padding" href="index.php">Home</a>
+                    <a class="hidden-padding" href="Reservation.php">Reservation</a>
+                    <a class="hidden-padding" href="otherservice.php">Service</a>
+                    <a class="hidden-padding" href="information.php">About us</a>
+                    <a class="hidden-padding" href="#">Contact</a>
+                </div>
+                <div>
+                    <button id="head-2-open" type="button" onclick="openHeader()">☰</button>
+                </div>
+                <div id="head-2-home">
+                    <a href="index.php">
+                        <p>Lux<span style="color: red">u</span>ry Cruises</p>
+                        <p>Ha Long Bay</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
+    <script type="text/javascript" src="js/header.js"></script>
 </body>
 </html>
